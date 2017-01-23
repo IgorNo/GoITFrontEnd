@@ -1,0 +1,8 @@
+
+:link[href ^= "http"] {
+    color: #f70;
+}
+/*:link[href *= "google.com"] {*/
+:link[href $= "google.com"] {
+    color: #666;
+}
