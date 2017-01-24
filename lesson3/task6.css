@@ -1,0 +1,62 @@
+span, label {
+    border: 3px solid white; /* Параметры рамки */
+    padding: 5px; /* Поля вокруг текста */
+    float: left;
+    font-size: 25px;
+}
+
+span {
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+
+input[type="checkbox"] {
+    visibility: hidden; /* Прячем чекбокс */
+    width: 0px;
+}
+label {
+    text-decoration: underline;
+    width: 100px;
+}
+
+#red ~ label[for = "red"] {
+    color: red;
+}
+#red:checked ~ label[for = "red"] {
+    color: lightpink;
+}
+
+input[type="checkbox"][id="green"] ~ label[for = "green"] {
+    color: green;
+}
+input[type="checkbox"][id="green"]:checked ~ label[for = "green"] {
+    color: lightgreen;
+}
+
+input[id="blue"] ~ label[for = "blue"] {
+    color: blue;
+    left: 5px; /* Положение от левого края */
+}
+input[id="blue"]:checked ~ label[for = "blue"] {
+    color: lightskyblue;
+}
+
+
+#red:checked ~ .red, input[id="blue"]:checked ~ .blue, input[type="checkbox"][id="green"]:checked ~ .green {
+    visibility: hidden; /* Прячем кнопки */
+    width: 0px;
+    padding: 0px;
+    border: 0px none;
+}
+
+
