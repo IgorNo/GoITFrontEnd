@@ -1,0 +1,30 @@
+div.main_bar {
+    border: 1px solid lightgray;
+}
+
+div.main_in_bar {
+    margin: 19px 2px;
+    background-color: blueviolet;
+}
+
+div.main_menu {
+    margin: auto;
+    /*padding: 10px;*/
+    width: 900px;
+}
+
+div.main_menu span {
+    font-size: 20px;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: inline-block;
+    margin-right: 24px;
+    line-height: 38px;
+    vertical-align: middle;
+}
+
+div.main_menu span:hover {
+    color: gray;
+    background-color: lightgray;
+}
