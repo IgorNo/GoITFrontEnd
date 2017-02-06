@@ -1,0 +1,59 @@
+div.pager_bar {
+    border: 1px solid lightgray;
+    margin: auto;
+    width: 900px;
+}
+
+div.main_in_bar {
+    background-color: blueviolet;
+}
+
+div.pager_item {
+    margin: 10px;
+}
+
+div.pager_item span {
+    font-size: 20px;
+    color: blueviolet;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: inline-block;
+    margin: 0 12px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+div.pager_item .prev_button:before {
+    content: "<< ";
+}
+
+div.pager_item .next_button:after {
+    content: " >>";
+}
+
+div.pager_item div.pages{
+    display: inline-block;
+}
+
+div.pager_item div.pages span {
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 0 8px;
+    width: 30px;
+    width: 24px;
+    text-align: center;
+}
+
+#three_point {
+    border-width: 0;
+}
+
+#three_point:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+div.pager_item span:hover {
+    color: white;
+    background-color: blueviolet;
+}
